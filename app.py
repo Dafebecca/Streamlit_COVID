@@ -194,7 +194,7 @@ if st.sidebar.button(label="Running",type="primary"):
         sol = solve_ivp(sir_model, [t[0], t[-1]], y0, args=(_beta, _gamma), t_eval=t, vectorized=True)
 
 with st.container(border=True):
-     st.text("Analisis")
+     st.text("Analysis")
 
      try:
             # Plotting actual and predicted data
